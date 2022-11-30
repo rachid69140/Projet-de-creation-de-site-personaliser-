@@ -23,7 +23,7 @@ else{
 }
 
 
-let TableauMembre = new Array() // creation du tableau ou seron stocker les membres
+var  TableauMembre = new Array() // creation du tableau ou seron stocker les membres
 
 
 
@@ -32,33 +32,18 @@ let TableauMembre = new Array() // creation du tableau ou seron stocker les memb
 function CreationMembre(){
 
 
-    AskCreationMembre = prompt("voulez vous crée un nouveau memrbe (Oui/Non) : "); // demande de creation de mmembre
+    var CreationMembre = prompt("voulez vous crée un nouveau memrbe (Oui/Non) : "); // demande de creation de mmembre
 
-    if (AskCreationMembre = "Oui") {
+    if (CreationMembre = "Oui") {
     
-        NumIdMembre += 1; // comptage pour l'id du membre
-        var nom = prompt("Entrer le nom du membre"); // saisie du nom du membre
         var prenom = prompt("Entrer le prenom du membre");//saisie du prenom du membre
-        var annerNaissance = parseInt(prompt("Entrer l'anner de naissancce du membre"));  //saisie de l'anner de naissance du membre
-        var portable = prompt("Entrer le portable du membre");//saisie du nemereau de telephone du mmembre
-        var age = (2022 - annerNaissance);//Calcul de l'age du mmembre
-        
-        if( age >= 18) { // si membre majeur
-                majeur = "oui";  // alors la variable majeur prend la valeur oui            
-        }
-
-        else { // sinon 
-                majeur = "non"; //la variable majeur prend la valeur non
-        }
-
-
-        
-
+        TableauMembre.push(prenom);
+        document.write(TableauMembre);
     }
 
     else {
             
-            if (AskCreationMembre === "Non") {                                            
+            if ( CreationMembre === "Non") {                                            
                 document.write("non");
             }
             
@@ -72,3 +57,6 @@ function CreationMembre(){
 
     }
 
+function AfficherMembre(){
+    document.write(TableauMembre);
+}
