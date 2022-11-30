@@ -215,8 +215,18 @@ p{
     color: black;
 }
 
-LogoMot{
+.LogoMot{
     display: flex;
     justify-content: left;
+
+}
+
+.Bouton{
+    border-radius:  30px ;
+    border: none;
+
+}
+.ConteneurBouton{
+    border: solid black;
 
 }
