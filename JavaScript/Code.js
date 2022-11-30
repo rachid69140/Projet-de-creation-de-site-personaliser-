@@ -26,16 +26,7 @@ else{
 let TableauMembre = new Array() // creation du tableau ou seron stocker les membres
 
 
-class Membre {
-    constructor( ID, Nom, Prenom, AnnerNaissance, Portable, Majeur){ //      
-        this.ID = ID;//
-        this.Nom = Nom;//
-        this.Prenom = Prenom;  //                                             // Creation de l'objet Membre
-        this.AnnerNaissance = AnnerNaissance;//
-        this.Portable = Portable;//
-        this.Majeur = Majeur;//
-    }
-}
+
 
  
 function CreationMembre(){
@@ -60,6 +51,9 @@ function CreationMembre(){
                 majeur = "non"; //la variable majeur prend la valeur non
         }
 
+
+        
+
     }
 
     else {
@@ -74,7 +68,7 @@ function CreationMembre(){
         }
     
 
-    const nouveau = new Membre(NumIdMembre ,nom, prenom, annerNaissance, portable, majeur);  //creation avec l'objet membre avec les information saisie
+    
 
     }
 
