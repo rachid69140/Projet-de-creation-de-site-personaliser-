@@ -38,7 +38,7 @@ function CreationMembre(){
     
         var prenom = prompt("Entrer le prenom du membre");//saisie du prenom du membre
         TableauMembre.push(prenom);
-        document.write(TableauMembre);
+      
     }
 
     else {
@@ -58,5 +58,6 @@ function CreationMembre(){
     }
 
 function AfficherMembre(){
-    document.write(TableauMembre);
+    
+    document.getElementById("ZoneAffichage").innerHTML="Voici la liste des membres: " +TableauMembre;
 }
