@@ -224,9 +224,19 @@ p{
 .Bouton{
     border-radius:  30px ;
     border: none;
+    background-color: none;
+    
 
 }
 .ConteneurBouton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border: solid black;
+    width: 10rem;
+    height: 5rem;
+    padding: 3rem;
+    
+
 
 }
