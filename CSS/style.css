@@ -224,7 +224,7 @@ p{
 .Bouton{
     border-radius:  30px ;
     border: none;
-    background-color: none;
+    background-color: white;
     
 
 }
@@ -233,9 +233,9 @@ p{
     flex-direction: column;
     justify-content: center;
     border: solid black;
-    width: 10rem;
-    height: 5rem;
-    padding: 3rem;
+    width: 15rem;
+    height: 3rem;
+    padding: 1rem;
     
 
 
