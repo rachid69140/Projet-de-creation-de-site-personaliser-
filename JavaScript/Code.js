@@ -23,7 +23,8 @@ else{
 }
 
 
-var  TableauMembre = new Array() // creation du tableau ou seron stocker les membres
+var  TableauMembre = new Array();// creation du tableau ou seron stocker les membres
+var TableIdMembre = new Array();// creation du tableau ou seron stocker les membres
 
 
 
@@ -33,12 +34,16 @@ function CreationMembre(){
 
 
     var CreationMembre = prompt("voulez vous crée un nouveau memrbe (Oui/Non) : "); // demande de creation de mmembre
+    var NombreMembre = parseInt(prompt("Combient de mmbre voulez vous crée"));// demande du nombre de mmebre a crée
+    var IdMembre = 0; // initialisation de la variable ID
+    var Indice = 0 // initialisation de la variable Indice
 
     if (CreationMembre = "Oui") {
-    
-        var prenom = prompt("Entrer le prenom du membre");//saisie du prenom du membre
-        TableauMembre.push(prenom);
-      
+        for (Indice; Indice < NombreMembre;Indice++){ // Tant que l'indice est plus petit que le nombre de membre que l'on veut entrer on repete la boucle de saisie et de contage des membres
+            
+            var prenom = prompt("Entrer le prenom du membre");//saisie du prenom du membre
+            TableauMembre.push(prenom); // ajout du prenom dans le tableau 
+        }
     }
 
     else {
