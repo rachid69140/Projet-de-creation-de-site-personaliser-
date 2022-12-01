@@ -34,13 +34,14 @@ function CreationMembre(){
 
 
     var CreationMembre = prompt("voulez vous crée un nouveau memrbe (Oui/Non) : "); // demande de creation de mmembre
-    var NombreMembre = parseInt(prompt("Combient de mmbre voulez vous crée"));// demande du nombre de mmebre a crée
-    var IdMembre = 0; // initialisation de la variable ID
-    var Indice = 0 // initialisation de la variable Indice
+    
 
     if (CreationMembre = "Oui") {
+        var IdMembre = 0; // initialisation de la variable ID
+        var Indice = 0 // initialisation de la variable Indice
+        var NombreMembre = parseInt(prompt("Combient de mmbre voulez vous crée"));// demande du nombre de mmebre a crée
         for (Indice; Indice < NombreMembre;Indice++){ // Tant que l'indice est plus petit que le nombre de membre que l'on veut entrer on repete la boucle de saisie et de contage des membres
-            IdMembre = Indice+1;
+            IdMembre = IdMembre+1;
             var prenom = prompt("Entrer le prenom du membre");//saisie du prenom du membre
             TableauMembre.push(prenom+"<br>"); // ajout du prenom dans le tableau 
             TableIdMembre.push(IdMembre+"<br>");
