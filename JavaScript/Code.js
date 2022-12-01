@@ -40,10 +40,10 @@ function CreationMembre(){
 
     if (CreationMembre = "Oui") {
         for (Indice; Indice < NombreMembre;Indice++){ // Tant que l'indice est plus petit que le nombre de membre que l'on veut entrer on repete la boucle de saisie et de contage des membres
-            IdMembre =+1;
+            IdMembre = Indice+1;
             var prenom = prompt("Entrer le prenom du membre");//saisie du prenom du membre
-            TableauMembre.push(prenom); // ajout du prenom dans le tableau 
-            TableIdMembre.push(IdMembre);
+            TableauMembre.push(prenom+"<br>"); // ajout du prenom dans le tableau 
+            TableIdMembre.push(IdMembre+"<br>");
         }
     }
 
@@ -67,4 +67,5 @@ function AfficherMembre(){
      
     document.getElementById("ZoneAffichageId").innerHTML=+TableauMembre;
     document.getElementById("ZoneAffichageMembre").innerHTML=TableIdMembre;
+   
 }

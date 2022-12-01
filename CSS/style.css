@@ -222,9 +222,13 @@ p{
 }
 
 .Bouton{
-    border-radius:  30px ;
-    border: none;
-    background-color: white;
+    border-radius:  0px ;
+    border: solid black;
+    border-width: 1px;
+    background-color: white ;
+    font-family:  "FontsFree-Net-WorkSans-ExtraLight";
+    padding: 8px;
+    color: darkgreen;
     
 
 }
@@ -244,9 +248,8 @@ p{
 
 
 
-    caption, th, td {
-
-padding: 8px;
+caption, th, td {
+    padding: 8px;
 
 }
 
@@ -260,4 +263,11 @@ padding: 8px;
     flex-direction: column; 
     justify-content: center; 
     width:  20rem;
+}
+
+
+.ContourTableau{
+    border: 2px solid black;
+    border-collapse: collapse; 
+    border-width: 1px;
 }
