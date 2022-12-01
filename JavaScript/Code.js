@@ -1,6 +1,6 @@
 
 
-function Test() {
+function Conexion() {
 var Utilisateur = prompt("Entrer le nom d'utilisateur : ")
 var Mdp = prompt("Entrer votre Mot de passe: ")
 if (Utilisateur ==="Admin" && Mdp === "Root"){
@@ -69,4 +69,27 @@ function AfficherMembre(){
     document.getElementById("ZoneAffichageId").innerHTML=+TableauMembre;
     document.getElementById("ZoneAffichageMembre").innerHTML=TableIdMembre;
    
+}
+
+function FonctionRecherche() {
+    
+    let input = document.getElementById('BareRecherche').value
+    input=input.toLowerCase();
+    window.open("Pages/"+input+".html")
+    
+}   
+
+function FonctionRechercheBis() {
+    
+    let input = document.getElementById('BareRecherche').value
+    input=input.toLowerCase();
+    window.open(input+".html")
+    
+}   
+
+function FonctionRechercheAdmin() {
+    
+    let input = document.getElementById('BareRecherche').value
+    input=input.toLowerCase();
+    window.open(input+".html")
 }
