@@ -242,3 +242,22 @@ p{
 
 }
 
+
+
+    caption, th, td {
+
+padding: 8px;
+
+}
+
+.ConteneurMillieux{
+    display: flex; 
+    justify-content: center;
+}
+
+.ConteneurTableau{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    width:  20rem;
+}

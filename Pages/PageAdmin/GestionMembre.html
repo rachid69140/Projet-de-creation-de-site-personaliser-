@@ -44,23 +44,40 @@
                  
             <h1>Outil de Creation et des gestions des membres</h1>
            
-            <div style="display: flex;justify-content: flex-start;">  
-                <div>
-                
-                
-                    <div class="ConteneurBouton">
-                        <input type="button" class="Bouton" value="Creation d'un nouveau membre" onclick="CreationMembre()">
-                    </div>    
-                
-                    <div class="ConteneurBouton">
-                        <input type="button" class="Bouton" value=" Afficher les membres"  onclick="AfficherMembre()">
+            <div class="ConteneurMillieux">
+                <div class="ConteneurTableau">  
                     
-                    </div>    
+                        <table  >
+                            <tr> 
+                                <th><input type="button" class="Bouton" value="Creation d'un nouveau membre" onclick="CreationMembre()"> </th> 
+                                <td> <input type="button" class="Bouton" value=" Actualiser "  onclick="AfficherMembre()"></td>
+                            </tr>
+                        </table  >
+                    
+                        
+                        <table style="border: 2px solid black;border-collapse: collapse;" >
+                            <tr style="border: 2px solid black;border-collapse: collapse;"> 
+                                <th style="border: 2px solid black;border-collapse: collapse;">Id</th>
+                                <td style="border: 2px solid black;border-collapse: collapse;">Prenom</td>
+                            </tr>
+                            
+                            <tr style="border: 2px solid black;border-collapse: collapse;"> 
+                                <th  style="border: 2px solid black;border-collapse: collapse;" ><div id="ZoneAffichageMembre"> </div></th>
+                                <td    style="border: 2px solid black;border-collapse: collapse;"><div id="ZoneAffichageId"></div></td> 
+                            </tr>
+                            
+                        
+                        </table >
+                
+                      
+                
+                      
                 </div>
-
-            <div id="ZoneAffichage" >
-               
-            </div> 
+            </div>
+           
+        
+        
+        
         </div>              
         </main>  
             
