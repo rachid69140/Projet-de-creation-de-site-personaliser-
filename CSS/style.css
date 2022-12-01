@@ -67,9 +67,8 @@ height: 100%;
    background-color: var(--NavBar-item-hovered-color);
 }
 
-.NavBarItem :last-child{
-   /* margin-top: auto; */
-}
+
+
 
 .NavBarLink{
     display: flex;
