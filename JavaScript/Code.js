@@ -46,7 +46,7 @@ function CreationMembre(){ // creation de la donction qui va gerer la creation d
         var Indice = 0 // initialisation de la variable Indice
         var NombreMembre = parseInt(prompt("Combient de mmbre voulez vous crée"));// demande du nombre de mmebre a crée
         
-        for (Indice; Indice < NombreMembre;Indice++){ // Tant que l'indice est plus petit que le nombre de membre que l'on veut entrer on repete la boucle de saisie et de contage des membres
+        for (Indice; Indice < NombreMembre;Indice++){ // Tant que l'indice est plus petit que le nombres de membre que l'on veut entrer on repete la boucle de saisie et de contage des membres
             IdMembre = IdMembre+1;
             var prenom = prompt("Entrer le prenom du membre n°"+IdMembre);//saisie du prenom du membre
             var Nom = prompt("Entrer le nom du membre n°"+IdMembre)//saisie du nom du membre
