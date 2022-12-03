@@ -1,5 +1,9 @@
 
 
+var Anee = new Date()
+AnéeRecuperer = Anee.getFullYear()
+
+
 function Conexion() {
 var Utilisateur = prompt("Entrer le nom d'utilisateur : ") // creation de la variable utilisateur
 var Mdp = prompt("Entrer votre Mot de passe: ")//creation de la variable du mot de passe
@@ -44,13 +48,25 @@ function CreationMembre(){ // creation de la donction qui va gerer la creation d
         
         for (Indice; Indice < NombreMembre;Indice++){ // Tant que l'indice est plus petit que le nombre de membre que l'on veut entrer on repete la boucle de saisie et de contage des membres
             IdMembre = IdMembre+1;
-            var prenom = prompt("Entrer le prenom du membre");//saisie du prenom du membre
-            var Nom = prompt("Entrer le nom du membre")
-            var Age = prompt("Entrer l'age du membre")
+            var prenom = prompt("Entrer le prenom du membre n°"+IdMembre);//saisie du prenom du membre
+            var Nom = prompt("Entrer le nom du membre n°"+IdMembre)//saisie du nom du membre
+            var AneeNaissance = prompt("Entrer l'année de naissance du membre n°"+IdMembre)//saisie de l'anner de naissance  du membre
+            var Majoriter = ( AnéeRecuperer - AneeNaissance); 
+            
+                          
+                          if( Majoriter >= 18) {
+                                  majeur = "oui";             // verification de l'age
+                          }
+
+                          else {
+                                  majeur = "non";
+                          }
+
+
             TableauPrenomMembre.push(prenom+"<br>"); // ajout du prenom dans le tableau 
-            TableIdMembre.push(IdMembre+"<br>");
-            TableauAgeMembre.push(Age+"<br>")
-            TableauNomMembre.push(Nom+"<br>")
+            TableIdMembre.push(IdMembre+"<br>");// ajout de l'id dans le tableau 
+            TableauAgeMembre.push(majeur+"<br>");// ajout de la majoriter  dans le tableau 
+            TableauNomMembre.push(Nom+"<br>");// ajout du nom dans le tableau 
         
         }
        
