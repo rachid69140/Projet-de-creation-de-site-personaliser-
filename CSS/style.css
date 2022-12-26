@@ -265,7 +265,16 @@ caption, th, td {
 }
 
 
+
+
 .ContourTableau{
+    border: 2px solid black;
+    border-collapse: collapse; 
+    border-width: 1px;
+}
+
+.ContourTableauBis{
+    margin-top: 5rem;
     border: 2px solid black;
     border-collapse: collapse; 
     border-width: 1px;
